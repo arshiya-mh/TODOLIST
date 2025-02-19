@@ -1,0 +1,189 @@
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+}
+
+
+.mainp {
+    width: 600px;
+    border-radius: 20px;
+    height: 150px;
+    margin-top: -200px;
+    border: 2px solid rgb(123, 123, 255);
+}
+
+
+.countainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    flex-direction: column; 
+}
+
+.countainer h1 {
+    color: rgb(123, 123, 255);
+    margin-left: 50px;
+}
+
+
+.inpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inpt input {
+    width: 400px;
+    height: 30px;
+    border: 2.3px solid rgb(123, 123, 255);
+    border-radius: 10px;
+}
+
+.ADDBT {
+    margin-left: -80px;
+    color: #fff;
+    background-color: rgb(123, 123, 255);
+    height: 35px;
+    width: 80px;
+    border: 2px solid rgb(123, 123, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul {
+    position: absolute;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+ul li {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Lora', sans-serif;
+    background-color: rgb(123, 123, 255);
+    width: 500px;
+    margin-top: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.todolist .done {
+    text-decoration: line-through;
+    color: #342056;
+}
+
+.headerp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerp div {
+    display: flex;
+    align-items: center;
+}
+
+.headerp img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 60px;
+}
+
+.headerp a {
+    text-decoration: none;
+    color: rgb(123, 123, 255);
+    margin-left: 20px;
+}
+
+.headerp a:hover {
+    text-decoration: underline;
+}
+
+#datetime {
+    color: rgb(123, 123, 255);
+    margin-right: 100px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+
+    .countainer {
+        margin-top: 300px;
+    }
+
+   .countainer h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .inpt {
+        flex-direction: column;
+    }
+
+    .inpt input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ADDBT {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    ul li {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .headerp {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .headerp div {
+        margin-bottom: 10px;
+    }
+
+    #datetime {
+        margin-right: 0;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .countainer {
+        width: 100%;
+    }
+    ul li {
+        font-size: 10px;
+    }
+
+
+    #datetime {
+        font-size: 10px;
+        margin-left: 100px;
+    }
+}
